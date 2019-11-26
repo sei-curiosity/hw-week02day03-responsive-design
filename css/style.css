@@ -16,12 +16,12 @@ body {
   font: 15px/1.4 Helvetica, Arial, sans-serif;
   margin: 0;
   width: 900px;
-  margin:auto;
+  margin: auto;
   padding: 25px 25px 50px;
 }
 
 a {
-  color: #C00;
+  color: #c00;
 }
 
 .page {
@@ -47,7 +47,7 @@ main {
   display: flex;
 }
 nav {
-  background-color: #B00;
+  background-color: #b00;
   margin: 0;
   margin-right: 5%;
   padding: 0;
@@ -68,7 +68,7 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #D00;
+  background-color: #d00;
 }
 
 section {
@@ -96,7 +96,7 @@ section img {
 }
 
 .footer {
-  background-color: #B00;
+  background-color: #b00;
   clear: both;
   margin: 0;
   padding: 10px 20px;
@@ -111,4 +111,23 @@ section img {
   display: inline;
   margin-right: 15px;
   padding-right: 15px;
+}
+
+@media only screen and (max-width: 576px) {
+  main {
+    flex-direction: column;
+  }
+  nav {
+    background-color: #b00;
+    margin: 0;
+    /*margin-right: 5%;*/
+    padding: 0;
+    flex-grow: 1;
+    min-width: 100px;
+    height: 100%;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
 }
