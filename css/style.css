@@ -16,7 +16,7 @@ body {
   font: 15px/1.4 Helvetica, Arial, sans-serif;
   margin: 0;
   width: 900px;
-  margin:auto;
+  margin: auto;
   padding: 25px 25px 50px;
 }
 
@@ -43,9 +43,11 @@ a {
 .header img {
   width: 30%;
 }
+
 main {
   display: flex;
 }
+
 nav {
   background-color: #B00;
   margin: 0;
@@ -111,4 +113,58 @@ section img {
   display: inline;
   margin-right: 15px;
   padding-right: 15px;
+}
+
+
+@media (max-width: 600px) {
+  body {
+
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  nav ul {
+    display: flex;
+    
+
+
+  }
+
+  main {
+    flex-direction: column;
+    width: 100%;
+
+
+
+  }
+
+  nav {
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    
+
+  }
+
+  nav a {
+    flex-wrap: wrap;
+  }
+
+  section {
+    width: 100%;
+    padding: 20px;
+    text-align: justify;
+  }
+
+  section p {
+    padding-right: 62px;
+  }
+
+  section img {
+    float: left;
+  }
+
+
+
+
 }
