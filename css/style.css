@@ -112,3 +112,45 @@ section img {
   margin-right: 15px;
   padding-right: 15px;
 }
+@media only screen and (max-width: 375px) {
+  body{
+    width: 100%;
+  
+  }
+  .header{
+    padding: 39px;
+  }
+  .header img{
+    width: 41%;
+    margin: -25px;
+  }
+  main{
+    display: block;
+  }
+  nav{
+    margin: 0%;
+    padding: 1px 0px 0px 0px;
+  }
+  nav ul{
+    display: inline-flex;
+  }
+  .breadcrumbs{
+  margin: 30px 33px;
+  display: inline-flex;
+  }
+  h1{
+    margin: 25px;
+
+  }
+  section img{
+   margin-right: 35px;
+  margin-bottom: 4px;
+  }
+  img{
+    float: left;
+  }
+
+
+  }
+  
+
