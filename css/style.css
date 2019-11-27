@@ -112,3 +112,26 @@ section img {
   margin-right: 15px;
   padding-right: 15px;
 }
+@media (min-width: 360px) { 
+  main{
+     display: block;
+     
+    
+ 
+
+  }
+  .cont{display:flex;
+  
+      }
+      body{
+        width: 100%;
+      }
+
+      
+ }
+ @media (min-width: 992px) { 
+   main{
+     display: flex;
+   }
+
+}
