@@ -78,6 +78,7 @@ section {
 }
 
 section img {
+  float: left;
   margin-right: 20px;
   margin-bottom: 5px;
   width: 30%;
@@ -111,4 +112,35 @@ section img {
   display: inline;
   margin-right: 15px;
   padding-right: 15px;
+}
+
+@media(max-width:900px){
+  main{
+    flex-direction:column;
+    width:65%;
+    
+  }
+  nav ul {
+    display: flex;
+    flex-direction: row;  
+    justify-content: flex-start;
+
+    padding-left:0%;
+  }
+  nav{
+    margin-right: 5%;
+  }
+  section{
+    margin-left: 2.5%;
+  }
+  nav li{
+    border-left:1px solid darkgrey;
+    
+
+  }
+  section p{
+    display:flex;
+    flex-wrap:wrap;
+  }
+
 }
