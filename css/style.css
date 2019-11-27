@@ -93,7 +93,7 @@ section img {
 
 .breadcrumbs li {
   margin: 0 10px;
-}
+}  
 
 .footer {
   background-color: #B00;
@@ -112,3 +112,45 @@ section img {
   margin-right: 15px;
   padding-right: 15px;
 }
+
+@media (min-width:320px) {
+  /* For mobile phones screens: */
+  .classd{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .classb{
+    display: block;
+    float: left;
+  }
+    main {
+      flex-flow: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      align-content: flex-start;
+    }
+    section {
+      margin: 0 0 30px;
+      width: 100%;
+    }
+  
+    section img {
+      float: left;
+      width: 30%;
+      padding-left: 10px;
+    }
+    nav {
+      width: 100%;
+      flex-grow: unset;
+    }
+    nav a {
+      display: block;
+      padding: 10px 20px;
+      float: left;
+      height: 100%;
+    }
+  } 
+  
+ 
