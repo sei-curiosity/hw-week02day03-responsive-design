@@ -1,22 +1,11 @@
-/*
-  Red: #B00;
-  Dark Red: #900;
 
-  Max page width: 900px
-  Nav width: 25%, with 5% right margin
-  Main width: 65%
-
-  CSS you'll need:
-  - max-width
-  - @media
-*/
 
 body {
   background-color: #333;
   font: 15px/1.4 Helvetica, Arial, sans-serif;
-  margin: 0;
   width: 900px;
   margin:auto;
+  margin:0px;
   padding: 25px 25px 50px;
 }
 
@@ -58,6 +47,7 @@ nav {
 
 nav ul {
   list-style: none;
+  padding-left:0;
 }
 
 nav a {
@@ -75,6 +65,8 @@ section {
   margin: 0 0 30px;
   flex-grow: 5;
   width: 400px;
+  padding-right: 7px;
+
 }
 
 section img {
@@ -112,3 +104,87 @@ section img {
   margin-right: 15px;
   padding-right: 15px;
 }
+
+@media only screen and (max-width: 500px) {
+  
+
+  @media (max-width: 768px){
+    body{
+      width: 100%;
+      height: auto;
+    }
+    main{
+      flex-direction: column;
+    }
+    nav{
+      width: 100%;
+    }
+  
+    nav ul{
+      display: flex;
+      padding-left: 0;
+      padding-right: 80px;
+      
+    }
+  
+    
+  
+    section img {
+      float: left;
+    }
+  
+    section{
+      padding-left: 20px;
+    }
+  
+  } 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /*
+  .header  {
+    float: none;
+    display: block;
+  }
+  nav ul{
+display:block;
+width:100%;
+clear:right;
+
+  }
+  nav ul li{
+    float: left;
+  }
+
+section ul  {
+  display: block;
+  width:100%;
+  clear:left;
+  
+
+
+}
+
+
+}
+
+
+
+/*
+  Red: #B00;
+  Dark Red: #900;
+
+  Max page width: 900px
+  Nav width: 25%, with 5% right margin
+  Main width: 65%
+
+  CSS you'll need:
+  - max-width
+  - @media
+*/
