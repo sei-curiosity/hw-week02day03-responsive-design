@@ -116,27 +116,23 @@ section img {
 
 @media (max-width: 768px){
   body{
-    box-sizing: border-box;
-    padding: 10px 10px 10px;
     width: 100%;
   }
   main{
-    flex-flow: column;
-    margin :0;
+    flex-direction: column;
+    display:flex;
   }
   nav{
-    align-items: center;
-    margin: 0;
+    display:flex;
+    flex-flow:row wrap;
+    width:100;
   }
 
   nav ul{
-    padding-left: 0;
-    display: flex;
-    flex-flow: row;
-    justify-content: flex-start;
-    padding-left: 0;
-    margin-top: 0;
-    margin-bottom: 0;
+    display:inline;
+    display:flex;
+    flex-flow: row wrap;
+    margin:0;
   }
 
   nav ul li{
@@ -144,10 +140,27 @@ section img {
   }
   section {
     padding-left: 20px;
+    widows: 90%;
+    padding:10px;
   }
   section img {
     float: left;
-    width:40%;
+    clear:both;
   }
-
+.page {
+  margin:0;
+}
+section h1 {
+  font-size:32px;
+}
+.header {
+  width:92.5%
+}
+.header img {
+  width:10%
+}
+main {
+  display: flex;
+  flex-direction: column;
+}
 } 
