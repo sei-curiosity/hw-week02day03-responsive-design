@@ -54,6 +54,7 @@ nav {
   flex-grow: 1;
   min-width: 100px;
   height: 100%;
+
 }
 
 nav ul {
@@ -111,4 +112,43 @@ section img {
   display: inline;
   margin-right: 15px;
   padding-right: 15px;
+}
+
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+
+  .img {
+    width:10%
+    flex
+  }
+  .page li {
+font-size:12px;
+  }
+  .page nav {
+    padding:0;
+    margin:0;
+  }
+  .breadcrumbs {
+    float:left;
+  font-size:12px;
+  }
+  .breadcrumbs section {
+    font-size:12px;
+    float :left;
+    margin:0;
+    padding:0
+  }
+  .breadcrumbs ul {
+    float:left
+  }
+ h1 {
+   float:left;
+   font-size:13px;
+
+  }
+  p {
+    float:left;
+    font-size:12px;
+    width:20%
+  }
 }
